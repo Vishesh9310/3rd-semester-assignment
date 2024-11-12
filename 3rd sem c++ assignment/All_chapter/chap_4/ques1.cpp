@@ -4,19 +4,41 @@ two floating-point numbers, and two strings.
 */
 
 #include <iostream>
+#include <string>
 using namespace std;
 
-void add(int num1, int num2){
-    cout<<num1+num2<<endl;
+int add(int a, int b) {
+    return a + b;
 }
 
-void add(int num1, int num2, float f1, float f2, string s1, string s2){
-    cout<<num1+num2+f1+f2<<s1+s2<<endl;
+float add(float a, float b) {
+    return a + b;
 }
 
-int main(){
-    add(3, 5);
-    add(2, 5, 1.4, 1.6, "vishesh", "chauhan");
+string add(string a, string b){
+    return a+b;
+}
+
+int main() {
+    int intResult = add(5, 10);
+    cout << "Addition of integers: " << intResult << endl;
+
+    float floatResult = add(5.5f, 10.5f);
+    cout << "Addition of floats: " << floatResult << endl;
+
+    string stringResult = add("Hello, ", "World!");
+    cout << "Addition of strings: " << stringResult << endl;
 
     return 0;
 }
+
+
+/*
+Function Overlaoding: It provides multiple definitions of the function by changing signature i.e. changing number of parameters, change datatype of parameters, return type doesn’t play any role.
+It can be done in base as well as derived class
+
+Function Overriding: It is the redefinition of base class function in its derived class with same signature i.e. return type and parameters. 
+It can only be done in derived class.
+
+function overlaoding me manu function bante hai but function overriding me base class ke function ko replace kr dete hai derived class ke funciton se.
+*/

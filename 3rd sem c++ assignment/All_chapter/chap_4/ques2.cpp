@@ -7,6 +7,7 @@ Overload the + operator to add two complex numbers.
 #include <sstream>
 #include <cmath>
 using namespace std;
+
 class Complex {
     private:
         int real, imag;
