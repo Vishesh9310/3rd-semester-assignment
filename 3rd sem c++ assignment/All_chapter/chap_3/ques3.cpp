@@ -11,17 +11,17 @@ using namespace std;
 int main(){
 
     //open text file in ofstream mode:
-    ofstream myfile("vishesh.txt");
+    ofstream myfile("Demo.txt");
 
     //write some text:
-    myfile <<"hello vishesh your are so smart";
+    myfile <<"hello world";
 
     //clost this file:
     myfile.close();
 
     //reopen text file in ifstream mode:
     string mytext;
-    ifstream Myfile("vishesh.txt");
+    ifstream Myfile("Demo.txt");
 
     //read file, display these text;
     
